@@ -12,3 +12,8 @@ class CatSecondaryConstructor(private val name: String) {
     timesMiau += 1
   }
 }
+
+@main def myExtension(): Unit = {
+  val myCat = new CatSecondaryConstructor()
+  myCat.sayMiau()
+}
