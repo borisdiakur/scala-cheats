@@ -13,7 +13,7 @@ class CatSecondaryConstructor(private val name: String) {
   }
 }
 
-@main def myExtension(): Unit = {
+@main def runCatSecondaryConstructor(): Unit = {
   val myCat = new CatSecondaryConstructor()
   myCat.sayMiau()
 }

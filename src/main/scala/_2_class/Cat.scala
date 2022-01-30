@@ -9,7 +9,7 @@ class Cat(private val name: String) {
   }
 }
 
-@main def main(): Unit = {
+@main def runCat(): Unit = {
   val myCat1 = new Cat("Mochi")
   val myCat2 = new Cat("Kimchi")
 
