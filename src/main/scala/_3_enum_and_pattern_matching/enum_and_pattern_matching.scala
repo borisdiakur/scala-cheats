@@ -1,6 +1,6 @@
 package _3_enum_and_pattern_matching
 
-@main def main(): Unit = {
+@main def runEnumAndPatternMatching(): Unit = {
   enum Sex {
     case Male, Female
   }

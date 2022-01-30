@@ -1,5 +1,5 @@
 package _1_hello_world
 
-@main def hello(): Unit = {
+@main def runHello(): Unit = {
   println("Hello World")
 }
