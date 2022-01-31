@@ -15,10 +15,10 @@ import scala.collection.mutable.ArrayBuffer
   }
   println()
 
-  //  for (i <- 0 until myNums.length) {
-  //    print(myNums(i))
-  //  }
-  //  println()
+  for (i <- 1 until myNums.length + 1) {
+    print(myNums(i - 1))
+  }
+  println()
 
   myNums.foreach(num => print(num))
   println()

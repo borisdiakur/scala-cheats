@@ -13,7 +13,7 @@ class Cat(private val name: String) {
   }
 }
 
-@main def main(): Unit = {
+@main def runEquality(): Unit = {
   val myCat1 = new Cat("Mochi")
   val myCat2 = new Cat("Kimchi")
   val myCat3 = new Cat("Mochi")
