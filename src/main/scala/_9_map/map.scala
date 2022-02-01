@@ -15,6 +15,10 @@ import scala.collection.mutable
   // adding
   println(myMap ++ Map('c' -> 'C'))
 
+  // checking for existance
+  println(myMap.contains('a'))
+  println(myMap.exists((key, value) => value == 'A'))
+
   // getting
   println(myMap.getOrElse('a', throw new IllegalAccessError("nope")))
 
