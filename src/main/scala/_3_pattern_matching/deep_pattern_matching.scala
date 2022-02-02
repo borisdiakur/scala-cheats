@@ -8,4 +8,14 @@ package _3_pattern_matching
 
   println(checkOption(Some("Mochi")))
   println(checkOption(None))
+
+  // -------
+
+  val s = Seq(1, 2, 3)
+  val res = s match {
+    case Seq(x, y, z) => x + y + z
+    case _            => 42
+  }
+
+  println(res)
 }
