@@ -1,4 +1,4 @@
-package _2_class
+package _24_secondary_constructor
 
 class CatSecondaryConstructor(private val name: String) {
   var timesMiau: Int = 0 // public

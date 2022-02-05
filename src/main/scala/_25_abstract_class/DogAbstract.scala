@@ -1,4 +1,4 @@
-package _2_class
+package _25_abstract_class
 
 abstract class Mammal(val livesOnEarth: Boolean) {
   protected def totalLegs: Int

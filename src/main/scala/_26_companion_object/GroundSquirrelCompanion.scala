@@ -1,4 +1,4 @@
-package _2_class
+package _26_companion_object
 
 class GroundSquirrelCompanion(private val name: String) {
   GroundSquirrelCompanion.totalSquirrels += 1

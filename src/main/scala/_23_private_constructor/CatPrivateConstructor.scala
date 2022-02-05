@@ -1,4 +1,4 @@
-package _2_class
+package _23_private_constructor
 
 class CatPrivateConstructor private (val name: String) {
   var title: String = _
