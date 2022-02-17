@@ -26,5 +26,4 @@ class Leaf(val value: Int) extends IsComponent {
   // Composition can be used to form complex hierarchies
   val root = Composit(Leaf(1), Composit(Composit(Leaf(2), Leaf(3)), Leaf(4)))
   root.print()
-
 }

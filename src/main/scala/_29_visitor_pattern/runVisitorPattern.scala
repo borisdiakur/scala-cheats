@@ -14,6 +14,11 @@ class NameReversePrinter extends Visitor[Cat] {
 }
 
 @main def runVisitorPattern(): Unit = {
+  // The Visitor Pattern allows to add functionality to a class
+  // without tweaking the class itself. Instead, the class extends
+  // the AcceptsVisitor trait which allows to execute arbitrary
+  // functionality on visit (when calling the accept method).
+
   val cat1 = Cat("Mochi")
   val cat2 = Cat("Kimchi")
 

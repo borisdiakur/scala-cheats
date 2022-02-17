@@ -1,5 +1,5 @@
 package _28_observer_pattern
 
 trait Observer {
-  def update(): Unit
+  def update(message: Option[String]): Unit
 }

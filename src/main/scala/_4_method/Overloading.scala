@@ -9,3 +9,9 @@ class Overloading {
     println(toSay)
   }
 }
+
+@main def runOverloading(): Unit = {
+  val o: Overloading = new Overloading()
+  o.saySomething()
+  o.saySomething("something else")
+}

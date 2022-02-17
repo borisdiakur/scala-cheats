@@ -13,7 +13,7 @@ trait Observable {
   def unsubscribe(obs: Observer): Boolean = observers.remove(obs)
 
   /** Notify all registered observers in case of an update. */
-  def notifyObservers(): Unit = {
-    observers.foreach((obs: Observer) => obs.update())
+  def notifyObservers(message: Option[String]): Unit = {
+    observers.foreach((obs: Observer) => obs.update(message))
   }
 }

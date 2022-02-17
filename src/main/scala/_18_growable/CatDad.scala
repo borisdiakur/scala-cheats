@@ -16,6 +16,8 @@ class CatDad(private var kittens: mutable.Map[Int, Kitten]) extends mutable.Grow
     kittens.clear()
   }
 
+  // override def knownSize: Int = super.knownSize
+
   override def toString: String = {
     kittens
       .map((id, kitten) => kitten.name)

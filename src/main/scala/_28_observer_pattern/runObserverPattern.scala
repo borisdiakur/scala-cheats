@@ -5,11 +5,15 @@ package _28_observer_pattern
   class Cat(val name: String) extends Observer, Observable {
     def sayHi(): Unit = {
       println(s"Miau. I'm $name.")
-      notifyObservers()
+      notifyObservers(None)
+      notifyObservers(Some("Miaaauuu!"))
     }
 
-    override def update(): Unit = {
-      println(s"Miau. I'm $name.")
+    override def update(message: Option[String]): Unit = {
+      message match {
+        case Some(m: String) => println(s"My name spelled backwards is ${name.reverse}. $m")
+        case None            => println(s"Miau. I'm $name.")
+      }
     }
   }
 

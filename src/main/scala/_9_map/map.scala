@@ -1,12 +1,13 @@
 package _9_map
 
+import scala.collection.immutable
 import scala.collection.mutable
 
 @main def runMap(): Unit = {
-  val myEmptyMap = Map()
+  val myEmptyMap = immutable.Map()
   println(myEmptyMap)
 
-  val myMap = Map('a' -> 'A', 'b' -> 'B')
+  val myMap = immutable.Map('a' -> 'A', 'b' -> 'B')
   println(myMap)
 
   // removing
@@ -22,5 +23,6 @@ import scala.collection.mutable
   // getting
   println(myMap.getOrElse('a', throw new IllegalAccessError("nope")))
 
-  val myMutMap = mutable.HashMap()
+  val myMutMap: mutable.HashMap[Char, Char] = mutable.HashMap()
+  myMutMap.addOne('c' -> 'C')
 }
